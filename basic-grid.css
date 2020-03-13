@@ -1,0 +1,8 @@
+.basic-grid {
+  display: grid;
+  gap: 1rem;
+
+  /* this auto-calculate columns based on browser width 
+  based on children of 240px width takes takes 1 column width (1fr) */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}

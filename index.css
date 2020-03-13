@@ -1,0 +1,31 @@
+ul.grid-pages {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+ul.grid-pages li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+ul.grid-pages li a {
+  text-decoration: none;
+  color: #0f0f0f;
+  background-color: #c9c9c9;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+ul.grid-pages li a:hover {
+  text-decoration: none;
+  color: #ccc;
+  background-color: #333;
+}
+
+@media screen and (min-width: 600px) {
+  ul.grid-pages {
+    flex-flow: row nowrap;
+  }
+}
